@@ -127,17 +127,17 @@ fun TelaInicial(
                 ) {
                     BoxNavegacao(
                         onClick = onScreenMuseumClicked,
-                        backgroundColor = Color(0xFFBBBBBB),
+                        backgroundColor = Color(0xFFE4E4E4),
                         icon = Icons.Default.AccountBalance
                     )
                     BoxNavegacao(
                         onClick = onScreenShoplicked,
-                        backgroundColor = Color(0xFFBBBBBB),
+                        backgroundColor = Color(0xFFE4E4E4),
                         icon = Icons.Default.AddShoppingCart
                     )
                     BoxNavegacao(
                         onClick = onScreenTicketsClicked,
-                        backgroundColor = Color(0xFFBBBBBB),
+                        backgroundColor = Color(0xFFE4E4E4),
                         icon = Icons.Default.Bookmarks
                     )
                 }
