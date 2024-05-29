@@ -34,6 +34,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import com.example.lunchtray.ui.LojaScreen
 import com.example.lunchtray.ui.TelaContato
 import com.example.lunchtray.ui.SobreMuseus
 import com.example.lunchtray.ui.TelaInicial
@@ -41,9 +42,9 @@ import com.example.lunchtray.ui.TelaInicial
 enum class RotaCultural(@StringRes val title: Int) {
     TelaInicial(title = R.string.app_name),
     Contato(title = R.string.start_order),
-    SobreMuseus(title = R.string.choose_side_dish),
-    Loja(title = R.string.screen1_title),
-    Ingressos(title = R.string.screen2_title),
+    SobreMuseus(title = R.string.screen1_title),
+    Loja(title = R.string.screen2_title),
+    Ingressos(title = R.string.screen3_title),
 }
 
 
@@ -128,6 +129,14 @@ fun RotaCulturalApp() {
                         .fillMaxSize()
                         .padding(innerPadding)
                 )
+            }
+
+            composable(route = RotaCultural.SobreMuseus.name) {
+                SobreMuseus()
+            }
+
+            composable(route = RotaCultural.Loja.name) {
+                LojaScreen()
             }
         }
     }
