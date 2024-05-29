@@ -22,6 +22,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -63,7 +64,7 @@ fun TelaInicial(
 ) {
     LazyColumn(
         modifier = modifier.fillMaxSize(),
-        verticalArrangement = Arrangement.SpaceBetween
+        verticalArrangement = Arrangement.Top
     ) {
         item {
             Box(
@@ -115,10 +116,10 @@ fun TelaInicial(
                     .fillMaxWidth()
                     .padding(dimensionResource(R.dimen.padding_medium))
             ) {
+                Spacer(modifier = Modifier.height(40.dp))
                 Row(
                     modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(vertical = 150.dp),
+                        .fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceEvenly
                 ) {
                     BoxNavegacao(

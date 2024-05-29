@@ -24,7 +24,6 @@ fun TelaCompraIngressos() {
 
 }
 
-
 @Preview
 @Composable
 private fun LojaScreenPreview() {
