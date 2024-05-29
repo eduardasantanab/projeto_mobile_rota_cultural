@@ -34,9 +34,10 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.example.lunchtray.ui.LojaScreen
+import com.example.lunchtray.ui.TelaCompraIngressos
+import com.example.lunchtray.ui.TelaLojaProdutos
 import com.example.lunchtray.ui.TelaContato
-import com.example.lunchtray.ui.SobreMuseus
+import com.example.lunchtray.ui.TelaSobreMuseus
 import com.example.lunchtray.ui.TelaInicial
 
 enum class RotaCultural(@StringRes val title: Int) {
@@ -132,11 +133,15 @@ fun RotaCulturalApp() {
             }
 
             composable(route = RotaCultural.SobreMuseus.name) {
-                SobreMuseus()
+                TelaSobreMuseus()
             }
 
             composable(route = RotaCultural.Loja.name) {
-                LojaScreen()
+                TelaLojaProdutos()
+            }
+
+            composable(route = RotaCultural.Ingressos.name) {
+                TelaCompraIngressos()
             }
         }
     }
