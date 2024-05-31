@@ -52,7 +52,7 @@ import androidx.compose.material.icons.filled.Bookmarks
 import androidx.compose.material3.Icon
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.example.lunchtray.ui.theme.md_theme_background_yellow
+import androidx.compose.ui.unit.sp
 import com.example.lunchtray.ui.theme.md_theme_light_tertiary
 
 @Composable
@@ -141,6 +141,225 @@ fun TelaInicial(
                         icon = Icons.Default.Bookmarks
                     )
                 }
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(vertical = 30.dp),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Text(
+                        text = stringResource(R.string.main_menu_title),
+                        style = MaterialTheme.typography.titleMedium.copy(fontSize = 28.sp),
+                    )
+                }
+                // Imagem do Instituto Ricardo Brenannd
+                Image(
+                    painter = painterResource(id = R.drawable.brennand),
+                    contentDescription = null,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .size(250.dp)
+                        .padding(start = 8.dp)
+                )
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(start = 8.dp)
+                ) {
+                    Text(
+                        text = stringResource(R.string.brennand),
+                        style = MaterialTheme.typography.titleMedium.copy(fontSize = 20.sp),
+                    )
+                }
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(10.dp)
+                ) {
+                    Text(
+                        text = stringResource(R.string.brennand_descricao),
+                        style = MaterialTheme.typography.titleMedium.copy(fontSize = 14.sp),
+                    )
+                }
+                // Imagem da Oficina de Cerâmica do Brenannd
+                Spacer(modifier = Modifier.height(40.dp))
+                Image(
+                    painter = painterResource(id = R.drawable.oficina_ceramica_brennand),
+                    contentDescription = null,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .size(300.dp)
+                        .padding(start = 8.dp)
+                )
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(start = 8.dp)
+                ) {
+                    Text(
+                        text = stringResource(R.string.oficina_brennand),
+                        style = MaterialTheme.typography.titleMedium.copy(fontSize = 20.sp),
+                    )
+                }
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(10.dp)
+                ) {
+                    Text(
+                        text = stringResource(R.string.oficina_brennand_descricao),
+                        style = MaterialTheme.typography.titleMedium.copy(fontSize = 14.sp),
+                    )
+                }
+                // Imagem do Museu Paço do Frevo
+                Spacer(modifier = Modifier.height(40.dp))
+                Image(
+                    painter = painterResource(id = R.drawable.paco_frevo),
+                    contentDescription = null,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .size(300.dp)
+                        .padding(start = 8.dp)
+                )
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(start = 8.dp)
+                ) {
+                    Text(
+                        text = stringResource(R.string.paco_frevo),
+                        style = MaterialTheme.typography.titleMedium.copy(fontSize = 20.sp),
+                    )
+                }
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(10.dp)
+                ) {
+                    Text(
+                        text = stringResource(R.string.paco_frevo_descricao),
+                        style = MaterialTheme.typography.titleMedium.copy(fontSize = 14.sp),
+                    )
+                }
+                // Imagem do Museu Cais do Sertão
+                Spacer(modifier = Modifier.height(40.dp))
+                Image(
+                    painter = painterResource(id = R.drawable.cais_do_sertao),
+                    contentDescription = null,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(start = 8.dp)
+                )
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(8.dp)
+                ) {
+                    Text(
+                        text = stringResource(R.string.cais_sertao),
+                        style = MaterialTheme.typography.titleMedium.copy(fontSize = 20.sp),
+                    )
+                }
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(10.dp)
+                ) {
+                    Text(
+                        text = stringResource(R.string.cais_sertao_descricao),
+                        style = MaterialTheme.typography.titleMedium.copy(fontSize = 14.sp),
+                    )
+                }
+                // Imagem Museu da Cidade do Recife
+                Spacer(modifier = Modifier.height(40.dp))
+                Image(
+                    painter = painterResource(id = R.drawable.cidade_do_recife),
+                    contentDescription = null,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .size(300.dp)
+                        .padding(start = 8.dp)
+                )
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(start = 8.dp)
+                ) {
+                    Text(
+                        text = stringResource(R.string.cidade_do_recife),
+                        style = MaterialTheme.typography.titleMedium.copy(fontSize = 20.sp),
+                    )
+                }
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(10.dp)
+                ) {
+                    Text(
+                        text = stringResource(R.string.cidade_do_recife_descricao),
+                        style = MaterialTheme.typography.titleMedium.copy(fontSize = 14.sp),
+                    )
+                }
+                // Imagem Museu do Homem do Nordeste
+                Spacer(modifier = Modifier.height(40.dp))
+                Image(
+                    painter = painterResource(id = R.drawable.homem_do_nordeste),
+                    contentDescription = null,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .size(300.dp)
+                        .padding(start = 8.dp)
+                )
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(start = 8.dp)
+                ) {
+                    Text(
+                        text = stringResource(R.string.homem_nordeste),
+                        style = MaterialTheme.typography.titleMedium.copy(fontSize = 20.sp),
+                    )
+                }
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(10.dp)
+                ) {
+                    Text(
+                        text = stringResource(R.string.homem_nordeste_descricao),
+                        style = MaterialTheme.typography.titleMedium.copy(fontSize = 14.sp),
+                    )
+                }
+                // Imagem Museu Gilberto Freyre
+                Spacer(modifier = Modifier.height(40.dp))
+                Image(
+                    painter = painterResource(id = R.drawable.gilberto_freyre),
+                    contentDescription = null,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .size(300.dp)
+                        .padding(start = 8.dp)
+                )
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(start = 8.dp)
+                ) {
+                    Text(
+                        text = stringResource(R.string.gilberto_freyre),
+                        style = MaterialTheme.typography.titleMedium.copy(fontSize = 20.sp),
+                    )
+                }
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(10.dp)
+                ) {
+                    Text(
+                        text = stringResource(R.string.gilberto_freyre_descricao),
+                        style = MaterialTheme.typography.titleMedium.copy(fontSize = 14.sp),
+                    )
+                }
             }
         }
     }
@@ -166,7 +385,6 @@ fun BoxNavegacao(onClick: () -> Unit, backgroundColor: Color, icon: ImageVector)
     }
 }
 
-
 @Preview
 @Composable
 fun TelaInicialPreview(){
@@ -191,7 +409,7 @@ fun TelaInicialThemePreview() {
             onScreenMuseumClicked = {},
             onScreenShoplicked = {},
             onScreenTicketsClicked = {},
-            )
+        )
     }
 }
 
@@ -207,5 +425,3 @@ fun TelaInicialDarkThemePreview() {
         )
     }
 }
-
-
