@@ -24,4 +24,32 @@
     <string name="screen1_title">Sobre museus</string>
     <string name="screen2_title">Loja</string>
     <string name="screen3_title">Ingressos</string>
+
+    <string name="main_menu_title">Museus em Destaque</string>
+
+    <string name="brennand">1. Instituto Ricardo Brenannd</string>
+    <string name="brennand_descricao">O Instituto Ricardo Brennand é um complexo cultural cercado por belos jardins e arquitetura inspirada em castelos medievais. Abriga uma vasta coleção de arte e objetos históricos, incluindo armas brancas, armaduras, pinturas e esculturas. O complexo também conta com uma biblioteca e uma pinacoteca, oferecendo um mergulho na história e na arte.\n\nEndereço: Alameda Antônio Brennand, s/n, Várzea, Recife - PE, 50741–904\n\nHorário de Funcionamento: Terça a domingo, das 13h às 17h.</string>
+
+    <string name="oficina_brennand">2. Oficina de Cerâmica do Brenannd</string>
+    <string name="oficina_brennand_descricao">A Oficina de Cerâmica Francisco Brennand é dedicada ao renomado artista Francisco Brennand. Funciona como museu e ateliê, exibindo uma vasta coleção de esculturas, murais e cerâmicas únicas, imersas em um ambiente que reflete a genialidade e a criatividade do artista.\n\nEndereço: Propriedade Santos Cosme e Damião, s/n, Várzea, Recife - PE, 50741-270\n\nHorário de Funcionamento: Segunda a sexta, das 8h às 17h; sábado, das 10h às 16h.
+</string>
+
+    <string name="paco_frevo">3. Museu Paço do Frevo</string>
+    <string name="paco_frevo_descricao">O Museu Paço do Frevo celebra o frevo, um gênero musical e de dança tradicional de Pernambuco. Oferece exposições interativas, apresentações ao vivo e atividades educativas que exploram a história e a importância cultural do frevo.\n\n<b>Endereço:</b> Praça do Arsenal da Marinha, s/n, Bairro do Recife, Recife - PE, 50030-360\n\nHorário de Funcionamento: Terça a sexta, das 9h às 17h; sábado e domingo, das 14h às 18h.
+</string>
+
+    <string name="cais_sertao">4. Cais do Sertão</string>
+    <string name="cais_sertao_descricao">O Museu Cais do Sertão oferece uma experiência imersiva que celebra a cultura e a vida no sertão nordestino. Com exposições interativas, explora temas como música, religiosidade, trabalho e o cotidiano dos sertanejos, proporcionando uma conexão profunda com o Nordeste.\n\nEndereço: Av. Alfredo Lisboa, s/n, Bairro do Recife, Recife - PE, 50030-150\n\nHorário de Funcionamento: Terça a domingo, das 9h às 17h.
+</string>
+
+    <string name="cidade_do_recife">5. Museu da Cidade do Recife</string>
+    <string name="cidade_do_recife_descricao">Situado no histórico Forte das Cinco Pontas, o Museu da Cidade do Recife é dedicado à história da cidade desde os tempos coloniais até os dias atuais. Com uma rica coleção de artefatos históricos, oferece uma visão abrangente sobre a evolução e a cultura do Recife.\n\nEndereço: Forte das Cinco Pontas, s/n, São José, Recife - PE, 50020–480\n\nHorário de Funcionamento: Terça a sábado, das 9h às 17h.</string>
+
+    <string name="homem_nordeste">6. Museu do Homem do Nordeste</string>
+    <string name="homem_nordeste_descricao">O Museu do Homem do Nordeste explora a diversidade cultural e histórica da região nordeste do Brasil. Sua coleção inclui objetos etnográficos, arte popular e exposições sobre a vida cotidiana e as tradições nordestinas, proporcionando um rico panorama da cultura local.\n\nEndereço: Av. Dezessete de Agosto, 2187, Casa Forte, Recife - PE, 52061-540\n\nHorário de Funcionamento: Terça a domingo, das 13h às 17h.
+</string>
+
+    <string name="gilberto_freyre">7. Museu Gilberto Freyre</string>
+    <string name="gilberto_freyre_descricao">Localizado na casa onde viveu o renomado sociólogo e escritor Gilberto Freyre, o museu preserva e exibe seus objetos pessoais, biblioteca, obras de arte e manuscritos. O ambiente proporciona uma imersão na vida e na obra do autor, destacando sua contribuição para a cultura e a sociologia brasileira.\n\nEndereço: Rua Dois Irmãos, 320, Apipucos, Recife - PE, 52071–440\n\nHorário de Funcionamento: Segunda a sexta, das 9h às 17h; sábado, das 9h às 12h.</string>
+
 </resources>
