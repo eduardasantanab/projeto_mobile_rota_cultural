@@ -6,11 +6,13 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
@@ -26,15 +28,15 @@ data class Museum(
 )
 
 @Composable
-fun TelaCompraIngressos() {
+fun TelaCompraIngressos(
+    modifier: Modifier = Modifier
+) {
     val museums = listOf(
         Museum("Instituto Ricardo Brennand", "Um museu com uma vasta coleção de armas brancas e obras de arte.", R.drawable.brennand, 20.0),
         Museum("Museu Cais do Sertão", "Museu interativo dedicado à cultura sertaneja.", R.drawable.cais_do_sertao, 15.0),
         Museum("Museu do Recife", "Museu com exposições sobre a história da cidade.", R.drawable.cidade_do_recife, 10.0),
         Museum("Museu Gilberto Fryre", "Museu interativo dedicado à cultura sertaneja.", R.drawable.gilberto_freyre, 22.0),
-        Museum("Homem do nordeste", "Museu com exposições sobre a história da cidade.", R.drawable.homem_do_nordeste, 30.0),
-
-
+        Museum("Homem do nordeste", "Museu com exposições sobre a história da cidade.", R.drawable.homem_do_nordeste2, 30.0),
         ).sortedBy { it.name }
 
     var selectedMuseum by remember { mutableStateOf<Museum?>(null) }
@@ -46,7 +48,7 @@ fun TelaCompraIngressos() {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .padding(16.dp),
+            .padding(14.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
@@ -62,9 +64,9 @@ fun TelaCompraIngressos() {
                 if (!showMuseumList) {
                     Button(
                         onClick = { showMuseumList = true },
-                        colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF880A9E))
+                        colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFEABC17))
                     ) {
-                        Text("Selecione um museu")
+                        Text("Comprar ingressos")
                     }
                 } else {
                     MuseumList(museums = museums, onMuseumSelected = { selectedMuseum = it })
@@ -84,7 +86,8 @@ fun TelaCompraIngressos() {
 fun MuseumList(museums: List<Museum>, onMuseumSelected: (Museum) -> Unit) {
     LazyColumn(
         modifier = Modifier.fillMaxSize(),
-        contentPadding = PaddingValues(16.dp)
+        contentPadding = PaddingValues(16.dp),
+        verticalArrangement = Arrangement.Center
     ) {
         items(museums) { museum ->
             Card(
@@ -194,6 +197,8 @@ fun MuseumDetails(
         }
     }
 }
+
+
 
 @Composable
 fun TicketCard(museum: Museum, time: String, quantity: Int, totalPrice: Double) {

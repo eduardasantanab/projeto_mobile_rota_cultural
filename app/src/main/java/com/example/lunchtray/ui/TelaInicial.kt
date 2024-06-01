@@ -50,6 +50,7 @@ import androidx.compose.material.icons.filled.AccountBalance
 import androidx.compose.material.icons.filled.AddShoppingCart
 import androidx.compose.material.icons.filled.Bookmarks
 import androidx.compose.material3.Icon
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.unit.sp
@@ -102,7 +103,7 @@ fun TelaInicial(
                     modifier = Modifier
                         .align(Alignment.BottomCenter)
                         .padding(vertical = 30.dp),
-                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFEABC17)) // Defina a cor desejada aqui
+                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFEABC17))
                 ) {
                     Text(
                         stringResource(R.string.start_order),
@@ -154,7 +155,7 @@ fun TelaInicial(
                 }
                 // Imagem do Instituto Ricardo Brenannd
                 Image(
-                    painter = painterResource(id = R.drawable.brennand),
+                    painter = painterResource(id = R.drawable.instituto_brennand),
                     contentDescription = null,
                     modifier = Modifier
                         .fillMaxWidth()
@@ -303,7 +304,7 @@ fun TelaInicial(
                 // Imagem Museu do Homem do Nordeste
                 Spacer(modifier = Modifier.height(40.dp))
                 Image(
-                    painter = painterResource(id = R.drawable.homem_do_nordeste),
+                    painter = painterResource(id = R.drawable.homem_do_nordeste2),
                     contentDescription = null,
                     modifier = Modifier
                         .fillMaxWidth()
