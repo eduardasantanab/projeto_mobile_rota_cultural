@@ -55,4 +55,9 @@
     <string name="gilberto_freyre">7. Museu Gilberto Freyre</string>
     <string name="gilberto_freyre_descricao">Localizado na casa onde viveu o renomado sociólogo e escritor Gilberto Freyre, o museu preserva e exibe seus objetos pessoais, biblioteca, obras de arte e manuscritos. O ambiente proporciona uma imersão na vida e na obra do autor, destacando sua contribuição para a cultura e a sociologia brasileira.\n\nEndereço: Rua Dois Irmãos, 320, Apipucos, Recife - PE, 52071–440\n\nHorário de Funcionamento: Segunda a sexta, das 9h às 17h; sábado, das 9h às 12h.</string>
 
+    <string name="order_summary">Resumo do Pedido</string>
+    <string name="select_time">Selecionar Horário</string>
+    <string name="select_museu">Selecionar Museu</string>
+    <string name="select_quantity">Selecionar Quantidade</string>
+
 </resources>
