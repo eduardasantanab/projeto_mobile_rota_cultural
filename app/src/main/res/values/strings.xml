@@ -20,8 +20,11 @@
     <string name="choose_side_dish">Sobre Museus</string>
     <string name="next">Próximo</string>
     <string name="start_order">Contato</string>
-
+    <string name="order_summary">Resumo do Pedido</string>
+    <string name="select_time">Selecionar Horário</string>
+    <string name="select_museu">Selecionar Museu</string>
     <string name="screen1_title">Sobre museus</string>
+    <string name="select_quantity">Selecionar Quantidade</string>
     <string name="screen2_title">Loja</string>
     <string name="screen3_title">Ingressos</string>
 
