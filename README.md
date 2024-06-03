@@ -6,7 +6,6 @@ Grupo:
 - Mario Jorge Oliveira Timoteo
 - Matheus Garcia
 - Pedro Henrique 
-<br/><br/>
 
 ### > Apresentação do projeto
 
