@@ -75,7 +75,7 @@ fun TelaLojaProdutos() {
                 Button(
 
                     onClick = { setIsVisible(true) },
-                    colors = ButtonDefaults.buttonColors(containerColor = Color.Gray)
+                    colors = ButtonDefaults.buttonColors(containerColor = Color.Magenta)
                 ) {
                     Text(text = "Entrar na loja PE")
                 }
@@ -98,7 +98,7 @@ fun TelaLojaProdutos() {
                         ) {
 
                             Image(
-                                painter = painterResource(id = R.drawable.caderno_pe),
+                                painter = painterResource(id = R.drawable.livro_historia),
                                 contentDescription = null,
                                 modifier = Modifier
                                     //.fillMaxWidth()
@@ -112,7 +112,7 @@ fun TelaLojaProdutos() {
                                 modifier = Modifier
                                     .padding(top = 30.dp)
                                     .align(Alignment.Center),
-                                text = "Coletor de poeira"
+                                text = "Livro História"
 
                             )
 
@@ -162,7 +162,7 @@ fun TelaLojaProdutos() {
                         ) {
 
                             Image(
-                                painter = painterResource(id = R.drawable.camisa_pe),
+                                painter = painterResource(id = R.drawable.livro_sebastiao),
                                 contentDescription = null,
                                 modifier = Modifier
                                     //.fillMaxWidth()
@@ -174,7 +174,7 @@ fun TelaLojaProdutos() {
                                 modifier = Modifier
                                     .padding(top = 30.dp)
                                     .align(Alignment.Center),
-                                text = "Segundo couro"
+                                text = "Livro Sebastião"
 
                             )
 
@@ -226,7 +226,7 @@ fun TelaLojaProdutos() {
                         ) {
 
                             Image(
-                                painter = painterResource(id = R.drawable.chavero_pe),
+                                painter = painterResource(id = R.drawable.livro_artista),
                                 contentDescription = null,
                                 modifier = Modifier
                                     //.fillMaxWidth()
@@ -239,7 +239,7 @@ fun TelaLojaProdutos() {
                                 modifier = Modifier
                                     .padding(top = 8.dp)
                                     .align(Alignment.Center),
-                                text = "Amuleto"
+                                text = "Livro do artista"
 
                             )
 
@@ -291,7 +291,7 @@ fun TelaLojaProdutos() {
 
 
                             Image(
-                                painter = painterResource(id = R.drawable.chapeu_pe),
+                                painter = painterResource(id = R.drawable.livro_tarsila),
                                 contentDescription = null,
                                 modifier = Modifier
                                     //.fillMaxWidth()
@@ -304,7 +304,7 @@ fun TelaLojaProdutos() {
                                 modifier = Modifier
                                     .padding(start = 8.dp)
                                     .align(Alignment.Center),
-                                text = "Esconde chifre",
+                                text = "Livro Tarsila",
 
 
                                 )
