@@ -75,7 +75,9 @@ fun TelaLojaProdutos() {
                 Button(
 
                     onClick = { setIsVisible(true) },
-                    colors = ButtonDefaults.buttonColors(containerColor = Color.Magenta)
+                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFEABC17))
+                    //containerColor = Color(0xFFEABC17)
+                    //
                 ) {
                     Text(text = "Entrar na loja PE")
                 }
