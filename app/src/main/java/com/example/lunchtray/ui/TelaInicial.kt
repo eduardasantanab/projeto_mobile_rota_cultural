@@ -49,6 +49,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AccountBalance
 import androidx.compose.material.icons.filled.AddShoppingCart
 import androidx.compose.material.icons.filled.Bookmarks
+import androidx.compose.material.icons.filled.Star
 import androidx.compose.material3.Icon
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
@@ -59,7 +60,7 @@ import com.example.lunchtray.ui.theme.md_theme_light_tertiary
 @Composable
 fun TelaInicial(
     onStartOrderButtonClicked: () -> Unit,
-    onScreenMuseumClicked: () -> Unit,
+    onScreenStarClicked: () -> Unit,
     onScreenShoplicked: () -> Unit,
     onScreenTicketsClicked: () -> Unit,
     modifier: Modifier = Modifier
@@ -127,9 +128,9 @@ fun TelaInicial(
                     horizontalArrangement = Arrangement.SpaceEvenly
                 ) {
                     BoxNavegacao(
-                        onClick = onScreenMuseumClicked,
+                        onClick = onScreenStarClicked,
                         backgroundColor = Color(0xFFE4E4E4),
-                        icon = Icons.Default.AccountBalance
+                        icon = Icons.Default.Star
                     )
                     BoxNavegacao(
                         onClick = onScreenShoplicked,
@@ -391,7 +392,7 @@ fun BoxNavegacao(onClick: () -> Unit, backgroundColor: Color, icon: ImageVector)
 fun TelaInicialPreview(){
     TelaInicial(
         onStartOrderButtonClicked = {},
-        onScreenMuseumClicked = {},
+        onScreenStarClicked = {},
         onScreenShoplicked = {},
         onScreenTicketsClicked = {},
         modifier = Modifier
@@ -407,7 +408,7 @@ fun TelaInicialThemePreview() {
     LunchTrayTheme(darkTheme = false) {
         TelaInicial(
             onStartOrderButtonClicked = {},
-            onScreenMuseumClicked = {},
+            onScreenStarClicked = {},
             onScreenShoplicked = {},
             onScreenTicketsClicked = {},
         )
@@ -420,7 +421,7 @@ fun TelaInicialDarkThemePreview() {
     LunchTrayTheme(darkTheme = true) {
         TelaInicial(
             onStartOrderButtonClicked = {},
-            onScreenMuseumClicked = {},
+            onScreenStarClicked = {},
             onScreenShoplicked = {},
             onScreenTicketsClicked = {},
         )

@@ -106,7 +106,7 @@ fun RotaCulturalApp() {
                     onStartOrderButtonClicked = {
                         navController.navigate(RotaCultural.Contato.name)
                     },
-                    onScreenMuseumClicked = {
+                    onScreenStarClicked = {
                         navController.navigate(RotaCultural.AvaliaMuseus.name)
                     },
                     onScreenShoplicked = {
