@@ -20,14 +20,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 
 @Composable
-fun TelaSobreMuseus() {
+fun TelaAvaliaMuseus() {
 
 }
 
 
 @Preview
 @Composable
-private fun SobreMuseusPreview() {
-    TelaSobreMuseus()
+private fun AvaliaMuseusPreview() {
+    TelaAvaliaMuseus()
 }
 

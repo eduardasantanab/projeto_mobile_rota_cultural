@@ -143,7 +143,7 @@ fun TelaCompraIngressos(
             16,
             "Observatório Cultural Torre Malakoff",
             "Observatório astronômico do século XIX e centro cultural com exposições temporárias.",
-            R.drawable.museu_observatorio_malakoff,
+            R.drawable.museu_malakoff,
             25.0
         ),
         Museum(

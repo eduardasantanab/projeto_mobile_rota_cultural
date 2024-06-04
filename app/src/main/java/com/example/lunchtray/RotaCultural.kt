@@ -34,16 +34,16 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import com.example.lunchtray.ui.TelaAvaliaMuseus
 import com.example.lunchtray.ui.TelaCompraIngressos
 import com.example.lunchtray.ui.TelaLojaProdutos
 import com.example.lunchtray.ui.TelaContato
-import com.example.lunchtray.ui.TelaSobreMuseus
 import com.example.lunchtray.ui.TelaInicial
 
 enum class RotaCultural(@StringRes val title: Int) {
     TelaInicial(title = R.string.app_name),
     Contato(title = R.string.start_order),
-    SobreMuseus(title = R.string.screen1_title),
+    AvaliaMuseus(title = R.string.screen1_title),
     Loja(title = R.string.screen2_title),
     Ingressos(title = R.string.screen3_title),
 }
@@ -107,7 +107,7 @@ fun RotaCulturalApp() {
                         navController.navigate(RotaCultural.Contato.name)
                     },
                     onScreenMuseumClicked = {
-                        navController.navigate(RotaCultural.SobreMuseus.name)
+                        navController.navigate(RotaCultural.AvaliaMuseus.name)
                     },
                     onScreenShoplicked = {
                         navController.navigate(RotaCultural.Loja.name)
@@ -124,7 +124,7 @@ fun RotaCulturalApp() {
             composable(route = RotaCultural.Contato.name) {
                 TelaContato(
                     onStartOrderButtonClicked = {
-                        navController.navigate(RotaCultural.SobreMuseus.name)
+                        navController.navigate(RotaCultural.AvaliaMuseus.name)
                     },
                     modifier = Modifier
                         .fillMaxSize()
@@ -132,8 +132,8 @@ fun RotaCulturalApp() {
                 )
             }
 
-            composable(route = RotaCultural.SobreMuseus.name) {
-                TelaSobreMuseus()
+            composable(route = RotaCultural.AvaliaMuseus.name) {
+                TelaAvaliaMuseus()
             }
 
             composable(route = RotaCultural.Loja.name) {
