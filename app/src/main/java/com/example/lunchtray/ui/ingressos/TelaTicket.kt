@@ -91,20 +91,20 @@ fun TicketCard(
         ) {
             Text("Seu Ticket", fontSize = 24.sp, color = Color.Black)
             Spacer(modifier = Modifier.height(8.dp))
-            Text("Museu: ${museum.value.name}", fontSize = 18.sp, color = Color.Gray)
+            Text("Museu: ${museum.value.name}", fontSize = 20.sp, color = Color.Black)
             TextField(
                 value = time.value,
                 onValueChange = { time.value = it },
-                label = { Text("Horário") },
+                label = { Text("Horário" , fontSize = 15.sp, color = Color.Black) },
                 modifier = Modifier.padding(vertical = 8.dp)
             )
             TextField(
                 value = quantity.value.toString(),
                 onValueChange = { quantity.value = it.toIntOrNull() ?: 0 },
-                label = { Text("Quantidade de ingressos") },
+                label = { Text("Quantidade de ingressos", fontSize = 15.sp, color = Color.Black) },
                 modifier = Modifier.padding(vertical = 8.dp)
             )
-            Text("Preço Total: R\$ ${"%.2f".format(totalPrice.value)}", fontSize = 18.sp, color = Color.Gray)
+            Text("Preço Total: R\$ ${"%.2f".format(totalPrice.value)}", fontSize = 20.sp, color = Color.Black)
 
             Spacer(modifier = Modifier.height(16.dp))
 
@@ -117,7 +117,7 @@ fun TicketCard(
                         val ticket = Ticket(museum.value, time.value, quantity.value, totalPrice.value)
                         onConfirmTicket(ticket)
                     },
-                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF6200EE))
+                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF0EDB16))
                 ) {
                     Text("Confirmar Ticket")
                 }

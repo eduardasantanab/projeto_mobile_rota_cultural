@@ -41,7 +41,7 @@ fun TelaIngressos(navController: NavController) {
                 navController.navigate("TelaDeTicketsSalvos")
             },
             modifier = Modifier.padding(top = 16.dp),
-            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFEABC17))
+            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF6200EE))
         ) {
             Text("Ver meus tickets")
         }

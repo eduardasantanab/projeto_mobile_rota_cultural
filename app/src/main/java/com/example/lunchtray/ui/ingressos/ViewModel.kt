@@ -14,4 +14,10 @@ class TicketViewModel : ViewModel() {
         }
         _savedTickets.value = updatedList
     }
+    fun deleteTicket(ticket: Ticket) {
+        val updatedList = _savedTickets.value.orEmpty().toMutableList().apply {
+            remove(ticket)
+        }
+        _savedTickets.value = updatedList
+    }
 }

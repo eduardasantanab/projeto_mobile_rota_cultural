@@ -15,6 +15,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.livedata.observeAsState
+import androidx.compose.ui.Alignment
 
 @Composable
 fun TelaDeTicketsSalvos(navController: NavController, ticketViewModel: TicketViewModel = viewModel()) {
@@ -33,7 +34,7 @@ fun TelaDeTicketsSalvos(navController: NavController, ticketViewModel: TicketVie
         )
         LazyColumn {
             items(savedTicketsState) { ticket ->
-                TicketItem(ticket = ticket, onClick = {})
+                TicketItem(ticket = ticket, onDeleteClick = { ticketViewModel.deleteTicket(ticket) }, onClick = {})
             }
         }
         Spacer(modifier = Modifier.weight(1f))
@@ -46,26 +47,36 @@ fun TelaDeTicketsSalvos(navController: NavController, ticketViewModel: TicketVie
     }
 }
 @Composable
-fun TicketItem(ticket: Ticket, onClick: () -> Unit) {
+fun TicketItem(ticket: Ticket, onDeleteClick: () -> Unit, onClick: () -> Unit) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
             .padding(vertical = 8.dp)
             .clickable(onClick = onClick),
-        colors = CardDefaults.cardColors(containerColor = Color.White)
+        colors = CardDefaults.cardColors(containerColor = Color(0xFF9C9999))
     ) {
-        Row(modifier = Modifier.padding(16.dp)) {
-            Column {
-                Text("Museu: ${ticket.museum.name}", fontSize = 18.sp, color = Color.Black)
-                Text("Horário: ${ticket.time}", fontSize = 16.sp, color = Color.Gray)
-                Text("Quantidade: ${ticket.quantity}", fontSize = 16.sp, color = Color.Gray)
+        Column(modifier = Modifier.padding(16.dp)) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Column {
+                    Text("Museu: ${ticket.museum.name}", fontSize = 24.sp, color = Color.Black)
+                    Text("Horário: ${ticket.time}", fontSize = 18.sp, color = Color.Black)
+                    Text("Quantidade: ${ticket.quantity}", fontSize = 18.sp, color = Color.Black)
+                }
+                Spacer(modifier = Modifier.width(16.dp))
+                Text(
+                    text = "Preço Total: R\$ ${"%.2f".format(ticket.totalPrice)}",
+                    fontSize = 16.sp,
+                    color = Color.Black
+                )
             }
-            Spacer(modifier = Modifier.width(16.dp))
-            Text(
-                text = "Preço Total: R\$ ${"%.2f".format(ticket.totalPrice)}",
-                fontSize = 16.sp,
-                color = Color.Gray
-            )
+            Button(
+                onClick = onDeleteClick,
+                colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFDA0909)),
+                modifier = Modifier.padding(vertical = 8.dp)
+            ) {
+                Text("Deletar")
+            }
         }
     }
 }
+
