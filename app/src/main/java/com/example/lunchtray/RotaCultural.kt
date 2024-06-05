@@ -35,10 +35,12 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.example.lunchtray.ui.TelaAvaliaMuseus
-import com.example.lunchtray.ui.TelaCompraIngressos
+import com.example.lunchtray.ui.ingressos.TelaIngressos
 import com.example.lunchtray.ui.TelaLojaProdutos
 import com.example.lunchtray.ui.TelaContato
 import com.example.lunchtray.ui.TelaInicial
+import com.example.lunchtray.ui.ingressos.NavGraphPreview
+
 
 enum class RotaCultural(@StringRes val title: Int) {
     TelaInicial(title = R.string.app_name),
@@ -89,11 +91,13 @@ fun RotaCulturalApp() {
 
     Scaffold(
         topBar = {
-            RotaCulturalAppBar(
-                currentScreenTitle = currentScreen.title,
-                canNavigateBack = navController.previousBackStackEntry != null,
-                navigateUp = { navController.navigateUp() }
-            )
+            if (currentScreen != RotaCultural.Ingressos) {
+                RotaCulturalAppBar(
+                    currentScreenTitle = currentScreen.title,
+                    canNavigateBack = navController.previousBackStackEntry != null,
+                    navigateUp = { navController.navigateUp() }
+                )
+            }
         }
     ) { innerPadding ->
 
@@ -141,7 +145,7 @@ fun RotaCulturalApp() {
             }
 
             composable(route = RotaCultural.Ingressos.name) {
-                TelaCompraIngressos()
+                NavGraphPreview()
             }
         }
     }

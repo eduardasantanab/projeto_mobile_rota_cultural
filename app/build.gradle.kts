@@ -66,6 +66,10 @@ android {
 
 dependencies {
 
+    implementation("androidx.compose.runtime:runtime-livedata:1.6.7")
+    val nav_version = "2.7.7"
+
+    implementation("androidx.navigation:navigation-compose:$nav_version")
     implementation(platform("androidx.compose:compose-bom:2023.08.00"))
     implementation("androidx.activity:activity-compose:1.7.2")
     implementation("androidx.compose.material3:material3")
