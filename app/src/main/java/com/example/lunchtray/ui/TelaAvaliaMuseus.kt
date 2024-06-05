@@ -62,7 +62,116 @@ val museus = listOf(
         name = "Museu do Homem do Nordeste",
         description = "Explore a cultura nordestina!",
         imageRes = R.drawable.homem_do_nordeste
+    ),
+    Avaliacao(
+        id = 4,
+        name = "",
+        description = "",
+        imageRes = R.drawable.museu_da_abolicao
+    ),
+    Avaliacao(
+        id = 5,
+        name = "",
+        description = "",
+        imageRes = R.drawable.cais_do_sertao
+    ),
+    Avaliacao(
+        id = 6,
+        name = "",
+        description = "",
+        imageRes = R.drawable.gilberto_freyre
+    ),
+    Avaliacao(
+        id = 7,
+        name = "",
+        description = "",
+        imageRes = R.drawable.museu_aloisio_magalhaes
+    ),
+    Avaliacao(
+        id = 8,
+        name = "",
+        description = "",
+        imageRes = R.drawable.museu_arte_popular_recife
+    ),
+    Avaliacao(
+        id = 9,
+        name = "",
+        description = "",
+        imageRes = R.drawable.museu_casa_do_carnaval
+    ),
+    Avaliacao(
+        id = 10,
+        name = "",
+        description = "",
+        imageRes = R.drawable.museu_chico_science
+    ),
+    Avaliacao(
+        id = 11,
+        name = "",
+        description = "",
+        imageRes = R.drawable.museu_de_artes_afro_rolando_toro
+    ),
+    Avaliacao(
+        id = 12,
+        name = "",
+        description = "",
+        imageRes = R.drawable.museu_do_trem
+    ),
+    Avaliacao(
+        id = 13,
+        name = "",
+        description = "",
+        imageRes = R.drawable.museu_franciscano_arte_sacra
+    ),
+    Avaliacao(
+        id = 14,
+        name = "",
+        description = "",
+        imageRes = R.drawable.museu_instituto_arqueologico
+    ),
+    Avaliacao(
+        id = 15,
+        name = "",
+        description = "",
+        imageRes = R.drawable.museu_luiz_gonzaga
+    ),
+    Avaliacao(
+        id = 16,
+        name = "",
+        description = "",
+        imageRes = R.drawable.museu_malakoff
+    ),
+    Avaliacao(
+        id = 17,
+        name = "",
+        description = "",
+        imageRes = R.drawable.museu_militar_forte_brum
+    ),
+    Avaliacao(
+        id = 18,
+        name = "",
+        description = "",
+        imageRes = R.drawable.museu_murio_la_grega
+    ),
+    Avaliacao(
+        id = 19,
+        name = "",
+        description = "",
+        imageRes = R.drawable.museu_paco_do_frevo
+    ),
+    Avaliacao(
+        id = 20,
+        name = "",
+        description = "",
+        imageRes = R.drawable.museu_sinagoga_kahal
+    ),
+    Avaliacao(
+        id = 21,
+        name ="",
+        description = "",
+        imageRes = R.drawable.paco_frevo
     )
+
 )
 
 @OptIn(ExperimentalMaterial3Api::class)
