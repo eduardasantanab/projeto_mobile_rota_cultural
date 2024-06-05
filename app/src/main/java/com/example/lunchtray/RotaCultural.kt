@@ -127,9 +127,9 @@ fun RotaCulturalApp() {
 
             composable(route = RotaCultural.Contato.name) {
                 TelaContato(
-                    onStartOrderButtonClicked = {
-                        navController.navigate(RotaCultural.AvaliaMuseus.name)
-                    },
+//                    onStartOrderButtonClicked = {
+//                        navController.navigate(RotaCultural.AvaliaMuseus.name)
+//                    },
                     modifier = Modifier
                         .fillMaxSize()
                         .padding(innerPadding)

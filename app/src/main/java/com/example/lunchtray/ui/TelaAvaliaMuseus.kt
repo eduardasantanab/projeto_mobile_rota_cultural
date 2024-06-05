@@ -191,6 +191,8 @@ fun TelaAvaliaMuseus() {
                 text = "Avalie os Museus do Recife!",
                 fontSize = 26.sp,
                 modifier = Modifier.padding(bottom = 26.dp)
+                .padding(horizontal = 16.dp)
+
             )
             AvaliacaoLazyCol()
         }
@@ -247,6 +249,7 @@ fun AvaliacaoItem(avaliacao: Avaliacao) {
             // exibir nome do museu
             Text(
                 text = avaliacao.name,
+                color = MaterialTheme.colorScheme.primary,
                 fontSize = 18.sp,
                 modifier = Modifier.padding(bottom = 4.dp)
             )
