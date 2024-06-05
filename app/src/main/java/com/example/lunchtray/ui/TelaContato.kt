@@ -1,6 +1,8 @@
 package com.example.lunchtray.ui
 
 
+
+
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -36,11 +38,13 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 
 
+
+
 @Composable
 fun TelaContato(
     modifier: Modifier = Modifier
 ) {
-    val phoneNumber = "55XXXXXXXXXXX "
+
 
     Column(
         modifier = modifier.fillMaxSize(),
@@ -48,9 +52,11 @@ fun TelaContato(
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
 
+
         ContatoItem(label = "Endereço", value = "123 Rota, Recife, Pernambuco")
         ContatoItem(label = "Telefone", value = "+55 81 12345678")
         ContatoItem(label = "Email", value = "rotacultural@email.com")
+
 
         Column(
             modifier = Modifier
@@ -65,12 +71,14 @@ fun TelaContato(
                 BotaoHiperlink(
                     icon = Icons.Default.ContactPhone,
                     backgroundColor = Color(0xFFEABC17),
-                    link = "https://wa.me/$phoneNumber"
+                    link = "https://roteiro-cultural.vercel.app/#sessao2"
                 )
             }
         }
     }
 }
+
+
 
 
 @Composable
@@ -101,6 +109,8 @@ fun BotaoHiperlink(
 }
 
 
+
+
 @Composable
 fun ContatoItem(label: String, value: String) {
     Column(
@@ -111,6 +121,7 @@ fun ContatoItem(label: String, value: String) {
         Text(text = value)
     }
 }
+
 
 @Preview
 @Composable
@@ -128,3 +139,4 @@ fun TelaContatoDarkThemePreview() {
         TelaContato()
     }
 }
+
