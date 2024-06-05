@@ -170,7 +170,7 @@ val museus = listOf(
 )
 
 
-// tela principal com composable
+// tela principal
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TelaAvaliaMuseus() {
@@ -197,7 +197,7 @@ fun TelaAvaliaMuseus() {
     }
 }
 
-// coluna lazy para exibir avaliações
+// coluna lazy pra exibir avaliações
 @Composable
 fun AvaliacaoLazyCol() {
     LazyColumn(
@@ -217,7 +217,7 @@ fun AvaliacaoLazyCol() {
     }
 }
 
-// composable para itens de avaliação individuais
+// avaliação individual de museus
 @Composable
 fun AvaliacaoItem(avaliacao: Avaliacao) {
     var rating by remember { mutableStateOf(0) }
@@ -277,7 +277,7 @@ fun AvaliacaoItem(avaliacao: Avaliacao) {
                     }
                 }
             }
-            // mostrar área de texto e botão de confirmação se a classificação for dada
+            // mostrar área de texto e botão de confirmação se a classificação de estrelas for dada
             if (showTextArea) {
                 Spacer(modifier = Modifier.height(8.dp))
                 OutlinedTextField(
