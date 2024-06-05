@@ -10,6 +10,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import com.example.lunchtray.RotaCulturalApp
+import com.example.lunchtray.ui.TelaInicial
 
 @Composable
 fun NavGraph(navController: NavHostController) {
@@ -42,6 +44,9 @@ fun NavGraph(navController: NavHostController) {
         }
         composable("TelaDeTicketsSalvos") {
             TelaDeTicketsSalvos(navController, ticketViewModel)
+        }
+        composable("TelaInicial") {
+            RotaCulturalApp()
         }
     }
 }

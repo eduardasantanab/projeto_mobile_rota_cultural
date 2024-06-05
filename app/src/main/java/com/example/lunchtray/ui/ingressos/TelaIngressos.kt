@@ -17,7 +17,11 @@ import androidx.navigation.NavController
 @Composable
 fun TelaIngressos(navController: NavController) {
     Button(
-        onClick = { navController.popBackStack() },
+        onClick = {
+            navController.navigate("TelaInicial") {
+                popUpTo(navController.graph.startDestinationId) { inclusive = true }
+            }
+        },
         colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFEABC17)),
         modifier = Modifier.padding(top = 16.dp, start = 16.dp)
     ) {
