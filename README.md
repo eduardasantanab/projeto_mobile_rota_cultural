@@ -5,7 +5,10 @@ Grupo:
 - Maria Eduarda Santana da Silva Barros
 - Mario Jorge Oliveira Timoteo
 - Matheus Garcia
-- Pedro Henrique 
+- Pedro Henrique<br/><br/>
+
+> [Slide de Apresentação](/arquivos/slide_apresentacao.mp4/)<br/><br/>
+> [Emulador do App](/arquivos/video_emulador.mp4/)<br/><br/>
 
 ### > Apresentação do projeto
 
