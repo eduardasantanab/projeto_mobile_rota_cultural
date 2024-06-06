@@ -15,12 +15,12 @@ Recife. Nosso objetivo foi continuar a aplicação da versão Web, para criar um
 mobile desenvolvido com o Android Studio, como parte do trabalho da disciplina de<br/>
 Programação Web e Mobile.
 
-O aplicativo foi desenvolvido no formato para celular, do tipo pixel 7 pro, e abrange<br/>
-funcionalidades direcionadas para a **divulgação de museus**, **compra de ingressos** para<br/>
-visitas e exposições, **compra de produtos** disponibilizados por lojas locais, artísticas<br/>
-e parceiras do do nosso trabalho, além de contar com **contato para suporte ao consumidor**. Com isso,<br/>
-nosso propósito é facilitar uma experiência rica para turistas e entusiastas da cultura<br/>
-pernambucana.
+O aplicativo foi desenvolvido no formato para celular, do tipo pixel 7 pro API 30, e abrange<br/>
+funcionalidades direcionadas para a **divulgação de museus**, **avaliação de museus**,<br/>
+**compra de ingressos**, para visitas e exposições, **compra de produtos** disponibilizados<br/>
+por lojas locais, artísticas e parceiras do do nosso trabalho, além de contar com<br/>
+**contato para suporte ao consumidor**. Com isso, nosso propósito é facilitar uma<br/>
+experiência rica para turistas e entusiastas da cultura pernambucana.
 
 ### > Objetivos
 
@@ -29,13 +29,17 @@ onde os usuários possam encontrar facilmente informações sobre os museus, com
 horários de funcionamento, exposições em destaque, e outras atividades culturais<br/>
 disponíveis.
 
-- Criar uma plataforma intuitiva para a compra de ingressos e exposições de museus:<br/>
-Criar uma interface acessível, onde os usuários possam comprar tickets facilmente,<br/>
-selecionando as melhores opções de museus, horários, quantidade de ingressos e<br/>
-acessar ao QRCODE do ingresso.
+- Criar uma plataforma acessível para a compra de ingressos e exposições de museus,<br/>
+onde os usuários possam comprar tickets facilmente, selecionando as melhores opções de<br/>
+museus, horários, quantidade de ingressos e acessar aos seus ingressos - podendo comprar,<br/>
+editar e remover os ingressos.
 
-- Criar uma plataforma intuitiva para a compra de produtos artísticos de lojas locais:<br/>
-Criar uma interface acessível, onde os usuários possam comprar produtos facilmente.
+- Criar uma funcionalidade para a compra de produtos artísticos de lojas locais:<br/>
+Uma interface acessível, onde os usuários possam comprar produtos facilmente e entrar<br/>
+em contato com um vendedor.
+
+- Realizar uma interação com o usuário, onde ele pode avaliar com estrelas e adicionar<br/>
+comentários sobre os museus.
 
 - Promoção do Turismo Cultural: Contribuir para o crescimento do turismo cultural<br/>
 em Recife, destacando a diversidade e a riqueza dos museus da região, e incentivando<br/>
@@ -43,29 +47,37 @@ a visitação e a valorização desses espaços.<br/><br/>
 
 ### > Recursos da Plataforma
 
-1. **Espaço para Contato:** Um botão que direciona para o canal de comunicação entre os usuários<br/>
-e a equipe responsável pela plataforma, onde dúvidas e suportes do serviço podem ser recorridos.<br/>
-
-<img src="caminho_da_imagem/><br/><br/>
-
-2. **Lista da informativos de recomendação de museus:** Uma seção dedicada a exibir informações<br/>
+1. **Lista da informativos de recomendação de museus:** Uma seção dedicada a exibir informações<br/>
 de divulgação dos museus. Nesse espaço contém a foto principal da instituição, uma descrição,<br/>
 o horário de funcionamento. Tudo isso com base nos museus mais visitados e mais bem avaliados<br/>
 pelos usuários da plataforma.
 
-<img src="caminho_da_imagem/><br/><br/>
+<img src="/arquivos/scroll_inicial.png/"><br/><br/>
 
-4. **Loja de produtos:** Uma tela destinada a promover lojas locais e produtos relacionados aos<br/>
+2. **Espaço para Contato:** Um botão que direciona para o canal de comunicação entre os usuários<br/>
+e a equipe responsável pela plataforma, onde dúvidas e suportes do serviço podem ser recorridos.<br/>
+
+<img src="/arquivos/hiperlink_contato.png"/><br/><br/>
+
+2. **Avaliação dos museus:** Um botão que direciona para a interação com o usuário, onde podem ser<br/>
+adicionados níveis de estrela e comentários no museu desejado.<br/>
+
+<img src="/arquivos/tela_avaliacao.png/"><br/><br/>
+
+3. **Loja de produtos:** Uma tela destinada a promover lojas locais e produtos relacionados aos<br/>
 museus, permitindo que os visitantes e usuários possam adquirir lembranças autênticas de sua<br/>
 experiência cultural em Recife.<br/>
 
-<img src="caminho_da_imagem/><br/><br/>
+<img src="/arquivos/navegacao_loja.png/"><br/><br/>
 
 4. **Compra de ingressos:** Uma tela desenvolvida para finalizar a compra de ingressos para<br/>
 visita aos museus cadastrados, permitindo que os visitantes e usuários possam adquirir<br/>
 tickets de acordo com a disponibilidade do local e quantidade de ingressos disponíveis.<br/>
 
-<img src="caminho_da_imagem/><br/><br/>
+<img src="/arquivos/navegacao_ingresso.png/"><br/><br/>
+
+É possível, ainda, deletar os ingressos comprados. Assim, completando a lógica CRUD, que permite criar um objeto de compra, visualizar, editar e deletar tickets.<br/>
+<img src="/arquivos/crud_ingresso.png/"><br/><br/>
 
 ### > Conceitos utilizados:
 - Jetpack Compose
