@@ -7,7 +7,8 @@ Grupo:
 - Matheus Garcia
 - Pedro Henrique<br/><br/>
 
-> [Slide de Apresentação](/arquivos/slide_apresentacao.mp4/)<br/><br/>
+> [Slide de Apresentação .mp4](/arquivos/slide_apresentacao.mp4/)<br/><br/>
+> [Slide de Apresentação .pdf](/arquivos/apresentacao_mobile.pdf/)<br/><br/>
 > [Emulador do App](/arquivos/video_emulador.mp4/)<br/><br/>
 
 ### > Apresentação do projeto
